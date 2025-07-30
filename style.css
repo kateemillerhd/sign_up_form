@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('/CaviarDreams/CaviarDreams-Bold.woff2') format('woff2'),
+        url('/CaviarDreams/CaviarDreams-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Caviar Dreams';
+    /* border: 2px solid yellow; */
+}
+
+body {
+    display: flex;
+}
+
+#container-left {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 40vw;
+    opacity: .8;
+}
+
+#pic {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#odin-logo {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+#odin {
+    position: relative;
+    color: hotpink;
+    font-size: 60px;
+    z-index: 1;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    font-size: 12px;
+    align-items: space-around;
+    justify-content: center;
+    padding: 10px;
+}
+
+form {
+   padding: 10px;
+   background-color: #FFFAF1;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.right {
+    position: relative;
+    left: 50px;
+}
+
+#last-name-label {
+    position: relative;
+    left: 165px;
+}
+
+#phone-label {
+    position: relative;
+    left: 195px;
+}
+
+#confirm-password-label {
+    position: relative;
+    left: 172px;
+}
+
+#intro {
+    padding: 20px;
+}
+
+#coerce {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#returning {
+    padding: 20px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    background-color: black;
+    color: hotpink;
+    font-weight: bold;
+}
+
+.password:invalid {
+    border-color: red;
+    outline: none;
+}

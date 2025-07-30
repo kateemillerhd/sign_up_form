@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-Up Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container-left">
+            <div id="pic">
+                <img id="odin-logo" src="/odin-lined.png" alt="odin-logo-outline" height="100px" width="75px" />
+                <p id="odin">ODIN</p>
+            </div>
+        </div>
+        <div id="form-container">
+            <p id="intro">This isn't a real form, you are not really signing up for anything. You know you
+                need something like this in your life to help you realize your deepest dreams!
+                Sign up <em>now</em> to get started.
+            </p>
+            <p id="coerce">You <em>know</em> you want to.</p>
+            <br>
+            <form action="my-form-data-page.com" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <br>
+                    <label for="first-name" class="left">First Name</label>
+                    <label for="last-name" id="last-name-label">Last Name</label>
+                    <br>
+                    <input type="text" id="first-name" class="left" required>
+                    <input type="text" id="last-name" class="right" required>
+                    <br>
+                    <label for="user-email" class="left">Email</label>
+                    <label for="phone" id="phone-label">Phone Number</label>
+                    <br>
+                    <input type="email" id="user-email" class="left" required>
+                    <input type="text" id="phone" class="right" required>
+                    <br>
+                    <label for="password" class="left">Password</label>
+                    <label for="confirm-password" id="confirm-password-label">Confirm Password</label>
+                    <br>
+                    <input type="password" id="password" class="left password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="password must contain atleast one number, one lowercase, and one uppercase" required>
+                    <input type="password" id="confirm-password" class="right password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="password must contain atleast one number, one lowercase, and one uppercase" required>
+                    <br>
+                </fieldset>
+                <br>
+                <button type="submit">Create Account</button>
+            </form>
+            <p id="returning">Already have an account? <a href="loginpage.com">Log in</a></p>
+        </div>
+    </body>
+</html>
